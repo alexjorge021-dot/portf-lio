@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio | Alex Magno Mateus Jorge</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+    }
+
+    body {
+      background: #020617;
+      color: #e5e7eb;
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 80px 20px;
+      text-align: center;
+      background: linear-gradient(135deg, #020617, #020617, #0f172a);
+    }
+
+    header h1 {
+      font-size: 3rem;
+      color: #38bdf8;
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 1.2rem;
+      color: #cbd5f5;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 60px 20px;
+    }
+
+    h2 {
+      font-size: 2rem;
+      color: #38bdf8;
+      margin-bottom: 20px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #020617;
+      border: 1px solid #1e293b;
+      border-radius: 16px;
+      padding: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      background: #020617;
+      border-top: 1px solid #1e293b;
+      color: #94a3b8;
+    }
+
+    /* FOTO FIXA */
+    .foto-perfil {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      width: 140px;
+      height: 210px;
+      object-fit: cover;
+      border-radius: 16px;
+      border: 3px solid #38bdf8;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.7);
+      cursor: pointer;
+      z-index: 1000;
+    }
+
+    /* MODAL */
+    .modal {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(2,6,23,0.95);
+      justify-content: center;
+      align-items: center;
+      z-index: 2000;
+    }
+
+    .modal img {
+      max-width: 90vw;
+      max-height: 90vh;
+      border-radius: 20px;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.9);
+    }
+
+    .modal span {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      font-size: 2.5rem;
+      cursor: pointer;
+      color: #38bdf8;
+    }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 2.2rem; }
+      h2 { font-size: 1.6rem; }
+
+      .foto-perfil {
+        width: 60vw;
+        height: auto;
+        max-height: 80vh;
+        right: 50%;
+        transform: translateX(50%);
+        bottom: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Alex Magno Mateus Jorge</h1>
+  <p>Estudante de Engenharia Informática | Desenvolvedor Web</p>
+</header>
+
+<section>
+  <h2>Sobre Mim</h2>
+  <p>
+    Sou estudante do 3º ano de Engenharia Informática, com formação em Informática de Gestão, Excel e desenvolvimento de sistemas web. Possuo experiência prática no desenvolvimento de sistemas de gestão académica e clínica, utilizando tecnologias modernas e boas práticas de programação.
+  </p>
+</section>
+
+<section>
+  <h2>Competências</h2>
+  <div class="cards">
+    <div class="card">PHP & MySQL</div>
+    <div class="card">HTML, CSS & JavaScript</div>
+    <div class="card">Sistemas de Gestão</div>
+    <div class="card">Excel Avançado</div>
+  </div>
+</section>
+
+<section>
+  <h2>Projetos</h2>
+  <div class="cards">
+    <div class="card">Sistema de Gestão de Clínica</div>
+    <div class="card">Sistema de Gestão de Alunos</div>
+  </div>
+</section>
+
+<section>
+  <h2>Contacto</h2>
+  <p>Email: alexjorge021@gmail.com</p>
+  <p>WhatsApp: +244 952 081 372</p>
+  <p>LinkedIn: Alex Magno Mateus Jorge</p>
+</section>
+
+<footer>
+  © 2026 • Alex Magno Mateus Jorge
+</footer>
+
+
+</div>
+
+<script>
+ 
+</script>
+
+</body>
+</html>
